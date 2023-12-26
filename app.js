@@ -6,6 +6,8 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
+app.use(express.static('public'));
+
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 
